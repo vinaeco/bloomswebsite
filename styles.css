@@ -133,6 +133,20 @@
     .grid-3, .grid-2, .grid-region-3 { grid-template-columns: 1fr; }
   }
 
+  /* ---------- Checklists ---------- */
+  .checklist { list-style: none; padding: 0; margin: 10px 0 0; }
+  .checklist li {
+    position: relative; padding-left: 24px; font-size: 14px; line-height: 1.6;
+    color: var(--ink-soft); margin-bottom: 7px;
+  }
+  .checklist li::before {
+    content: "✓"; position: absolute; left: 0; top: 0;
+    color: var(--terracotta); font-weight: 800; font-size: 13px;
+  }
+  .checklist-group h4 {
+    font-size: 14px; font-weight: 800; color: var(--navy); margin: 0 0 6px;
+  }
+
   /* ---------- Footer ---------- */
   .site-footer { background: var(--navy); padding: 72px clamp(24px, 6vw, 64px) 40px; }
   .footer-top {
